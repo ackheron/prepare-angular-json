@@ -1,0 +1,23 @@
+image: node:20
+
+stages:
+  - test
+  - release
+
+before_script:
+  - npm install -g pnpm
+  - pnpm install
+
+test:
+  stage: test
+  script:
+    - prepare-angular-json
+
+release:
+  stage: release
+  only:
+    - tags
+  script:
+    - npm config set //registry.npmjs.org/:_authToken "${NPM_TOKEN}"
+    - pnpm publish --access public
+
