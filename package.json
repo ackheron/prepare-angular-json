@@ -1,6 +1,9 @@
 {
   "name": "@ackheron/prepare-angular-json",
   "version": "1.0.23",
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "Génère un fichier angular.json propre à partir d’un angular.jsonc avec commentaires.",
   "bin": {
     "prepare-angular-json": "index.js"
