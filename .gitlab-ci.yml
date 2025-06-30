@@ -11,9 +11,11 @@ before_script:
 test:
   stage: test
   script:
+    - ls -l
+    - cp model/angular.jsonc angular.jsonc
+    - ls -l angular.jsonc
     - node index.js
-    - node prepare-angular-json.js  # maintenant il existe
-
+    - node prepare-angular-json.js
 release:
   stage: release
   only:
