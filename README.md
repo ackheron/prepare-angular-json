@@ -1,4 +1,4 @@
-# Prepare Angular JSON
+# Prepare Angular JSON.
 
 **Prepare Angular JSON** is a lightweight CLI tool that generates a clean `angular.json` file from a commented `angular.jsonc`.  
 It allows you to keep your Angular configuration files readable and well-documented, while staying fully compatible with the Angular CLI.
