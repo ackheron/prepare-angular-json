@@ -19,6 +19,6 @@ release:
     - tags
   script:
     - npm config set //registry.npmjs.org/:_authToken "${NPM_TOKEN}"
-    - pnpx prepare-angular-json
+    - node prepare-angular-json
     - pnpm publish --access public
 
