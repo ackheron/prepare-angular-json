@@ -26,6 +26,6 @@ publish:
     - node index.js
     - node prepare-angular-json.js
     # Création du .npmrc temporaire avec le token injecté depuis la variable CI
-    - echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
+    - echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ./.npmrc
     - pnpm publish --access public --no-git-checks
 
