@@ -21,7 +21,6 @@ release:
   only:
     - tags
   script:
-    - npm config set //registry.npmjs.org/:_authToken "${NPM_TOKEN}"
     - cp model/angular.jsonc angular.jsonc
     - node index.js
     - node prepare-angular-json.js
