@@ -11,7 +11,7 @@ before_script:
 test:
   stage: test
   script:
-    - pnpx prepare-angular-json
+    - node prepare-angular-json
 
 release:
   stage: release
