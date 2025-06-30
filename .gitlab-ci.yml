@@ -11,7 +11,7 @@ before_script:
 test:
   stage: test
   script:
-    - prepare-angular-json
+    - pnpx prepare-angular-json
 
 release:
   stage: release
@@ -19,5 +19,6 @@ release:
     - tags
   script:
     - npm config set //registry.npmjs.org/:_authToken "${NPM_TOKEN}"
+    - pnpx prepare-angular-json
     - pnpm publish --access public
 
